@@ -110,27 +110,57 @@ print(cuenta)
 #_____________________________________________________
 
 """
-
+copy()
+hace una copia de la lista seleccionada, sin afectar la original
 """
+colores = ["rojo","azul","negro","blanco"]
 
+colores_copia = colores.copy()
+colores_copia.insert(0, "marron")
+print(colores)
+print(colores_copia)
 
 #_____________________________________________________
 
 """
-
+DEL
+La del palabra clave se utiliza para eliminar objetos. 
+En Python, todo es un objeto, por lo que la del palabra 
+clave también se puede usar para eliminar variables, 
+listas o partes de una lista, etc.
 """
+ejemplo = [20,30,50,60]
 
-
+del ejemplo[0]
+print(ejemplo)
 #_____________________________________________________
 
 """
-
+copiando listas de otra y manejando los datos copiados
+NOTA: [inicio:fin]
 """
-
+nba=["bulls","miami","lakers","raptors","denver"]
+conferencia = nba[0:3]
+print(conferencia)
 
 #_____________________________________________________
+#                 OPERADOR IN Y NOT IN
+"""
+IN: verifica si el valor ingresado se encuentra dentro de la lista
+y si esta, devuelve True
 
+NOT IN: verifica si el valor ingresado NO se encuentra
+dentro de la lista, si no se encuentra, devuelve True
 
+Sintaxis: valor in nombre_lista
+          valor not in nombre_lista
+"""
+equipos = ["madrid","city","barca","chelsea"]
+
+if equipos in "madrid":
+    print("si esta")
+else:
+    print("no esta")
 
 
 
